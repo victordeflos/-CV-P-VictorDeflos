@@ -10,14 +10,16 @@ const GlobalStyle = createGlobalStyle`
     h1{
     font-weight:bold;
     font-size: 4rem;
-}
+    }
 h2{
     color:white;
     font-size:2rem;
+   
 }
 h3{
 color: white;
 font-size:1.6rem;
+
 }
 
 
@@ -25,6 +27,7 @@ font-size:1.6rem;
 h4 {
     font-weight:bold;
     font-size: 2rem;
+    font-family: "Lobster";
 
 }
 
@@ -42,11 +45,12 @@ p{
     color:white;
     font-size:1.2rem; 
     line-height:150%;
+    font-family: 'inter', sans-serif,
 }
 
 body{
     background: black;
-    font-family: 'inter', sans-serif;
+    font-family: 'inter', sans-serif, 'Lobster';
    
     
     }

@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Victor de flos\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'react-responsive'
+1 verbose cli ]
+2 info using npm@6.14.0
+3 info using node@v14.16.0
+4 verbose npm-session 897452f51d543a6c
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 304 https://registry.npmjs.org/react-responsive 347ms (from cache)
+8 silly pacote tag manifest for react-responsive@latest fetched in 368ms
+9 timing stage:loadCurrentTree Completed in 5419ms
+10 silly install loadIdealTree
+11 silly install cloneCurrentTreeToIdealTree
+12 timing stage:loadIdealTree:cloneCurrentTree Completed in 37ms
+13 silly install loadShrinkwrap
+14 warn read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@2. I'll try to do my best with it!
+15 http fetch GET 304 https://registry.npmjs.org/@babel%2fcore 137ms (from cache)
+16 silly pacote version manifest for @babel/core@7.12.3 fetched in 145ms
+17 silly pacote version manifest for @babel/core@7.12.3 fetched in 5ms
+18 silly pacote version manifest for @babel/core@7.12.17 fetched in 2ms
+19 silly pacote version manifest for @babel/core@7.12.17 fetched in 2ms
+20 silly pacote version manifest for @babel/core@7.12.17 fetched in 3ms
+21 silly pacote version manifest for @babel/core@7.12.17 fetched in 3ms
+22 silly pacote version manifest for @babel/core@7.12.17 fetched in 6ms
+23 silly pacote version manifest for @babel/core@7.12.17 fetched in 3ms
+24 silly pacote version manifest for @babel/core@7.12.17 fetched in 6ms
+25 silly pacote version manifest for @babel/core@7.12.17 fetched in 7ms
+26 http fetch GET 304 https://registry.npmjs.org/jest-resolve 138ms (from cache)
+27 silly pacote version manifest for jest-resolve@26.6.0 fetched in 143ms
+28 timing stage:loadIdealTree:loadShrinkwrap Completed in 2293ms
+29 silly install loadAllDepsIntoIdealTree
+30 silly resolveWithNewModule react-responsive@8.2.0 checking installable status
+31 http fetch GET 304 https://registry.npmjs.org/hyphenate-style-name 92ms (from cache)
+32 silly pacote range manifest for hyphenate-style-name@^1.0.0 fetched in 96ms
+33 silly resolveWithNewModule hyphenate-style-name@1.0.4 checking installable status
+34 http fetch GET 304 https://registry.npmjs.org/matchmediaquery 147ms (from cache)
+35 http fetch GET 304 https://registry.npmjs.org/shallow-equal 147ms (from cache)
+36 silly pacote range manifest for matchmediaquery@^0.3.0 fetched in 151ms
+37 silly resolveWithNewModule matchmediaquery@0.3.1 checking installable status
+38 silly pacote range manifest for shallow-equal@^1.1.0 fetched in 152ms
+39 silly resolveWithNewModule shallow-equal@1.2.1 checking installable status
+40 http fetch GET 304 https://registry.npmjs.org/css-mediaquery 996ms (from cache)
+41 silly pacote range manifest for css-mediaquery@^0.1.2 fetched in 998ms
+42 silly resolveWithNewModule css-mediaquery@0.1.2 checking installable status
+43 http fetch GET 304 https://registry.npmjs.org/fsevents 83ms (from cache)
+44 silly pacote range manifest for fsevents@^2.1.2 fetched in 87ms
+45 silly resolveWithNewModule fsevents@2.3.2 checking installable status
+46 verbose stack RangeError: Maximum call stack size exceeded
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:435:27)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+46 verbose stack     at failedDependency (C:\Users\Victor de flos\AppData\Roaming\npm\node_modules\npm\lib\install\deps.js:453:9)
+47 verbose cwd C:\Users\Victor de flos\Desktop\Game Over\CV-P-VictorDeflos
+48 verbose Windows_NT 10.0.21364
+49 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Victor de flos\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "i" "react-responsive"
+50 verbose node v14.16.0
+51 verbose npm  v6.14.0
+52 error Maximum call stack size exceeded
+53 verbose exit [ 1, true ]

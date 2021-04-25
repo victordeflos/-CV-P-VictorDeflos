@@ -1,0 +1,80 @@
+# npm resolution error report
+
+2021-04-25T13:18:10.676Z
+
+While resolving: victor_de_flos@0.1.0
+Found: react@17.0.2
+node_modules/react
+  react@"^17.0.2" from the root project
+
+Could not resolve dependency:
+peer react@"^16.12.0" from framer@1.2.29
+node_modules/framer
+  framer@"^1.2.29" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force, or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
+
+Raw JSON explanation object:
+
+{
+  "code": "ERESOLVE",
+  "current": {
+    "name": "react",
+    "version": "17.0.2",
+    "whileInstalling": {
+      "name": "victor_de_flos",
+      "version": "0.1.0",
+      "path": "C:\\Users\\Victor de flos\\Desktop\\Game Over\\CV-P-VictorDeflos"
+    },
+    "location": "node_modules/react",
+    "dependents": [
+      {
+        "type": "prod",
+        "name": "react",
+        "spec": "^17.0.2",
+        "from": {
+          "location": "C:\\Users\\Victor de flos\\Desktop\\Game Over\\CV-P-VictorDeflos"
+        }
+      }
+    ]
+  },
+  "currentEdge": {
+    "type": "prod",
+    "name": "react",
+    "spec": "^17.0.2",
+    "from": {
+      "location": "C:\\Users\\Victor de flos\\Desktop\\Game Over\\CV-P-VictorDeflos"
+    }
+  },
+  "edge": {
+    "type": "peer",
+    "name": "react",
+    "spec": "^16.12.0",
+    "error": "INVALID",
+    "from": {
+      "name": "framer",
+      "version": "1.2.29",
+      "whileInstalling": {
+        "name": "victor_de_flos",
+        "version": "0.1.0",
+        "path": "C:\\Users\\Victor de flos\\Desktop\\Game Over\\CV-P-VictorDeflos"
+      },
+      "location": "node_modules/framer",
+      "dependents": [
+        {
+          "type": "prod",
+          "name": "framer",
+          "spec": "^1.2.29",
+          "from": {
+            "location": "C:\\Users\\Victor de flos\\Desktop\\Game Over\\CV-P-VictorDeflos"
+          }
+        }
+      ]
+    }
+  },
+  "peerConflict": null,
+  "strictPeerDeps": false,
+  "force": false
+}
