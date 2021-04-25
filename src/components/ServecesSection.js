@@ -8,7 +8,7 @@ import Q4 from "../img/future4.svg";
 import { BesicLeyout, Description, Image } from "../styles";
 import styled from "styled-components";
 
-const ServicesHome = () => {
+const ServicesSection = () => {
   return (
     <Services>
       <Description>
@@ -103,4 +103,4 @@ const Card = styled.div`
     }
   }
 `;
-export default ServicesHome;
+export default ServicesSection;
