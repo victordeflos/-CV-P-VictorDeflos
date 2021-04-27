@@ -1,5 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
+import {Link} from "react-router-dom"
+
 
 const AccessibilityContainer = styled.div`
   display: flex;
@@ -55,8 +57,12 @@ const LoginButton = styled.button`
 export function Accessibility(props) {
   return (
     <AccessibilityContainer>
-      <RegisterButton>Registar</RegisterButton>
-      <LoginButton>Login</LoginButton>
+      <RegisterButton>
+        <Link to="/registar">Registar</Link>
+        </RegisterButton>
+      <LoginButton>
+        <Link to="/login">Login</Link>
+        </LoginButton>
     </AccessibilityContainer>
   );
 }

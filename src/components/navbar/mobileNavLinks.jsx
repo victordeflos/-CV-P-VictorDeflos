@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Accessibility } from "./accessibility";
 import { MenuToggle } from "./menuToggle";
-
+import {Link} from "react-router-dom"
 const NavLinksContainer = styled.div`
   height: 100%;
   display: flex;
@@ -35,7 +35,7 @@ const LinkItem = styled.li`
   margin-bottom: 10px;
 `;
 
-const Link = styled.a`
+const Linka = styled.a`
   text-decoration: none;
   color: inherit;
   font-size: inherit;
@@ -57,14 +57,14 @@ export function MobileNavLinks(props) {
       {isOpen && (
         <LinksWrapper>
         <LinkItem>
-            <Link href="#">About Us</Link>
+            <Linka><Link to="/">About Us</Link></Linka>
           </LinkItem>
 
           <LinkItem>
-            <Link href="#">Our Work</Link>
+          <Linka><Link to="/work">Our Work</Link></Linka>
           </LinkItem>
           <LinkItem>
-            <Link href="#">Contact Us</Link>
+          <Linka><Link to="/contact">Contact Us</Link></Linka>
           </LinkItem>
           
           

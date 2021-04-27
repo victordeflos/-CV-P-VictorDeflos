@@ -1,8 +1,8 @@
-import React from 'react';
-import App from "./App";
+import React from 'react'
+import App from "./App"
 import ReactDOM from 'react-dom';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration'
+import reportWebVitals from './reportWebVitals'
 import {BrowserRouter} from "react-router-dom"
 ReactDOM.render(
   <React.StrictMode>

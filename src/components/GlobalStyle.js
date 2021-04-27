@@ -31,7 +31,7 @@ h4 {
 
 }
 
-a{
+linka{
     font-size:1.1.rem;
 }
 
