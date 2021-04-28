@@ -1,5 +1,5 @@
-import React from "react";
-import home1 from "../img/home1.png";
+import React from "react"
+import home1 from "../img/home1.png"
 import { BesicLeyout, Description, Image, Hide } from "../styles";
 
 

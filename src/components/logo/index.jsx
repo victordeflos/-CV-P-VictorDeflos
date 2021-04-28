@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import logobel from "../../assets/images/logobel.png";
+import logobel from "../../assets/images/logobel10.png";
 
 const LogoWrapper = styled.div`
   display: flex;
