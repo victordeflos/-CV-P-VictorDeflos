@@ -1,6 +1,11 @@
 import React from "react"
+
+import { BesicLeyout, Description, Image,  } from "../styles";
+import styled from 'styled-components';
+//Images
 import home1 from "../img/home1.png"
-import { BesicLeyout, Description, Image, Hide } from "../styles";
+import { titleAnim, fade, photoAnim } from '../animation';
+import { motion } from 'framer-motion';
 
 
 const AboutSection = () => {
@@ -9,37 +14,33 @@ const AboutSection = () => {
       <Description>
         <div className="title">
           <Hide>
-            <h1>I Work 4 World 2 By Yours</h1>
-          </Hide>
-          <br></br>
-          <Hide>
-            <h1>
-              <span>The</span> World <span>Is</span>Yours
-            </h1>
+            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <h2>
-              Forever ? <span>Forever Ever.</span>
-            </h2>
+            <motion.h2 variants={titleAnim}>
+              your <span>dreams</span> come
+            </motion.h2>
+          </Hide>
+          <Hide>
+            <motion.h2 variants={titleAnim}>true.</motion.h2>
           </Hide>
         </div>
-        <br></br>
-        <h4>
-          Consult us for any Digital Transformation and ideas that You have, we
-          have more than <span>30 years</span> of experience.
-        </h4>
-        <br></br>
-        <br></br>
-        <div>
-          <button> My thoughts !? </button>
-        </div>
+        <motion.p variants={fade}>
+          Contact us for any photography or videography ideas that you have. We
+          have professionals with amazing skills to help you achieve it.
+        </motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
-
       <Image>
-        <img src={home1} alt="My Brand" />
+        <motion.img variants={photoAnim} src={home1} alt="movie-app" />
       </Image>
+      
     </BesicLeyout>
   );
 };
+
+const Hide = styled.div`
+  overflow: hidden;
+`;
 
 export default AboutSection;
