@@ -1,12 +1,12 @@
 import React from "react"
 
-import { BesicLeyout, Description, Image,  } from "../styles";
+import { BesicLeyout, Description, Image, Hide  } from "../styles";
 import styled from 'styled-components';
 //Images
 import home1 from "../img/home1.png"
 import { titleAnim, fade, photoAnim } from '../animation';
 import { motion } from 'framer-motion';
-
+import Wave from './Wave';
 
 const AboutSection = () => {
   return (
@@ -34,7 +34,7 @@ const AboutSection = () => {
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="movie-app" />
       </Image>
-      
+      <Wave/>
     </BesicLeyout>
   );
 };
