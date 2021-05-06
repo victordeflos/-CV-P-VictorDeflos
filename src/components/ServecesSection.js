@@ -1,83 +1,81 @@
 import React from "react";
+import { BesicLeyout, Description, Image } from "../styles";
+import styled from "styled-components";
 import home3 from "../img/home0.png";
 import home2 from "../img/home2.png";
+// Import Icons
 import Q1 from "../img/future1.svg";
 import Q2 from "../img/future2.svg";
 import Q3 from "../img/future3.svg";
 import Q4 from "../img/future4.svg";
-import { BesicLeyout, Description, Image } from "../styles";
-import styled from "styled-components";
+// Scroll Animation
+import { reveal } from '../animation';
+import { useScroll } from './useScroll';
+
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Services>
+    <Services
+      transition={{ duration: 0.75 }}
+      ref={element}
+      variants={reveal}
+      animate={controls}
+      initial="hidden"
+    >
       <Description>
-        <h2>
-          Automotive revolution <span> perspective </span> towards 2022
+      <h2>
+          High <span>quality</span> services.
         </h2>
         <Cards>
           <Card>
             <div className="icon">
-              <img src={Q1} alt="Eko City" />
-
-              <h2>
-                Cheap Electric Vehicle <span>Change</span> that Matters.
-              </h2>
+              <img src={Q4} alt="" />
+              <h3>Efficient</h3>
             </div>
-            <p>
-              Today’s economies are dramatically cha development in emerging
-              markets, technologies, sustainability policies, a
-            </p>
+            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={Q2} alt="Efficient" />
-              <h2>Background Study</h2>
+              <img src={Q1} alt="" />
+              <h3>Teamwork</h3>
             </div>
-            <p>
-              How To Develop Research Topics and Ideas Thesis? Do These 10
-              Things! on youtube
-            </p>
+            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={Q3} alt="Globally" />
-
-              <h2>Creative Piople - This is how the subject is structuret </h2>
+              <img src={Q2} alt="" />
+              <h3>Pro Grade Gear</h3>
             </div>
-            <p>
-              After the title and abstract, the introduction is the next thing
-              your audience will read, so it's v
-            </p>
+            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={Q4} alt="Teamwork" />
-
-              <h2>LIMITING GENUS</h2>
+              <img src={Q3} alt="" />
+              <h3>Affordable</h3>
             </div>
-            <p>
-              Definition of Research Definition of Project What is Research
-              Project ? Research Project Examples Research Project Types
-              Importance of Research Projects Ethics for Research Project
-            </p>
+            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
         </Cards>
-        <Image>
-          <img src={home3} alt="Managment" />
+      </Description>
+      <Image>
+      <img src={home3} alt="" />
           <p>Definition of Research Definition of Project What is Research</p>
         </Image>
-      </Description>
-
       <Image>
-        <img src={home2} alt="EkoBatery" />
-        <p>Definition of Research Definition of Project What is Research</p>
+        <img src={home2} alt="" />
       </Image>
     </Services>
   );
 };
 
 const Services = styled(BesicLeyout)`
+  min-height: 90vh;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
   h2 {
     padding-bottom: 5rem;
   }
@@ -85,13 +83,19 @@ const Services = styled(BesicLeyout)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+  @media (max-width: 1500px) {
+    display: block;
+    padding: 2rem 2rem;
+  }
 `;
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1500px) {
+    justify-content: center;
+  }
 `;
-
 const Card = styled.div`
   flex-basis: 20rem;
   .icon {
@@ -99,8 +103,16 @@ const Card = styled.div`
     align-items: center;
     h3 {
       margin-left: 1rem;
+      background: white;
+      color: black;
       padding: 1rem;
     }
   }
+  @media (max-width: 1500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
+
 export default ServicesSection;

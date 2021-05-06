@@ -1,6 +1,6 @@
 import React from "react"
 
-import { BesicLeyout, Description, Image, Hide  } from "../styles";
+import { BesicLeyout, Description, Image,  } from "../styles";
 import styled from 'styled-components';
 //Images
 import home1 from "../img/home1.png"

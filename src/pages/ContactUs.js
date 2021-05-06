@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components';
 // Animation
 import { motion } from 'framer-motion';
-import { pageAnimation } from '../animation';
+import { pageAnimation, titleAnim } from '../animation';
 
 
 const ContactUs = () => {

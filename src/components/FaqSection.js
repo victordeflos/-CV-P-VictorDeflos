@@ -1,5 +1,5 @@
 import React from 'react';
-import { About } from '../styles';
+import { BesicLeyout } from '../styles';
 import styled from 'styled-components';
 import Toggle from './Toggle';
 import { AnimateSharedLayout } from 'framer-motion';
@@ -62,7 +62,7 @@ const FaqSection = () => {
     </Faq>
   );
 };
-const Faq = styled(About)`
+const Faq = styled(BesicLeyout)`
   display: block;
   span {
     display: block;

@@ -5,6 +5,7 @@ import MovieApp from "../img/movieapp2.png"
 import PostApp from "../img/postapp2.png"
 import ContactApp from "../img/contactapp2.png"
 import { motion } from 'framer-motion';
+import { useScroll } from '../components/useScroll';
 import {
   pageAnimation,
   fade,
@@ -15,26 +16,25 @@ import {
   slider,
 } from '../animation';
 
-
-
-
 const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   return (
-  <Work style={{ background: '#fff' }}
-  variants={pageAnimation}
-  exit="exit"
-  initial="hidden"
-  animate="show">
-    <ScrollTop />
+    <Work
+      style={{ background: '#fff' }}
+      variants={pageAnimation}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+    >
+      <ScrollTop />
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <Movie variants={movieContainer}>
+       <Movie variants={movieContainer}>
         <motion.h2 variants={fade}>Movie App</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to='/work/movie-app'>
