@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import {Link} from "react-router-dom"
-import MovieApp from "../img/home0.png"
-import PostApp from "../img/home5.png"
-import ContactApp from "../img/home4.png"
+import MovieApp from "../img/movieapp2.png"
+import PostApp from "../img/postapp2.png"
+import ContactApp from "../img/contactapp2.png"
 import { motion } from 'framer-motion';
 import {
   pageAnimation,
@@ -15,27 +15,7 @@ import {
   slider,
 } from '../animation';
 
-const Work = styled(motion.div)`
-min-height: 100vh;
-overflow: hidden;
-padding: 5rem 10rem;
-h2 {
-  padding: 1rem 0rem;
-}
-`;
-const Movie = styled.div`
-padding-bottom: 10rem;
-.Line {
-  height: 0.5rem;
-  background: #cccccc;
-  margin-bottom;
-}
-img {
-  width: 100vh;
-  height: 70vh;
-  object-fit: cover;
-}
-`;
+
 
 
 const OurWork = () => {
@@ -91,5 +71,54 @@ const OurWork = () => {
   </Work>
   )
 };
+
+const Work = styled(motion.div)`
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 5rem 10rem;
+  h2 {
+    padding: 1rem 0rem;
+  }
+  @media (max-width: 1500px) {
+    padding: 2rem 2rem;
+  }
+`;
+
+const Movie = styled(motion.div)`
+  padding-bottom: 10rem;
+  .line {
+    height: 0.5rem;
+    background: #23d997;
+    margin-bottom: 3rem;
+  }
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+`;
+const Hide = styled.div`
+  overflow: hidden;
+`;
+//Frame Animation
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  background: #fffebf;
+  z-index: 2;
+`;
+const Frame2 = styled(Frame1)`
+  background: #ff8efb;
+`;
+const Frame3 = styled(Frame1)`
+  background: #8ed2ff;
+`;
+const Frame4 = styled(Frame1)`
+  background: #8effa0;
+`;
+
 
 export default OurWork;

@@ -70,7 +70,7 @@ export const sliderContainer = {
     opacity: 1,
 
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.10,
       ease: 'easeOut',
       duration: 1,
     },
@@ -83,7 +83,7 @@ export const movieContainer = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.10,
       ease: 'easeOut',
       duration: 1,
       when: 'beforeChildren',
