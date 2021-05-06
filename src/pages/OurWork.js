@@ -15,6 +15,8 @@ import {
   movieContainer,
   slider,
 } from '../animation';
+import ScrollTop from '../components/ScrollTop';
+
 
 const OurWork = () => {
   const [element, controls] = useScroll();

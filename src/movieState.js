@@ -15,7 +15,7 @@ export const MovieState = () => {
       mainImg: movieapp,
       secondaryImg: movieapp2,
       url: '/work/movie-app',
-      movieText: nananana,
+      
       awards: [
         {
           title: 'Truly A masterpiece',
@@ -40,7 +40,7 @@ export const MovieState = () => {
       secondaryImg: postapp2,
       url: '/work/post-app',
       
-      movietext: nananana,
+      
       awards: [
         {
           title: 'Truly A masterpiece',
@@ -64,7 +64,7 @@ export const MovieState = () => {
       mainImg: contactapp,
       secondaryImg: contactapp2,
       url: '/work/contact-app',
-      movietext: nananana,
+      
       awards: [
         {
           title: 'Truly A masterpiece',

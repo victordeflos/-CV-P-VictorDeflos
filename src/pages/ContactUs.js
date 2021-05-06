@@ -24,19 +24,19 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Socials</h2>
+            <a href="www.twitter.com">Twitter</a>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send us a message</h2>
+            <a href="www.twitter.com">Twitter</a>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Drop an email.</h2>
+            <a href="www.twitter.com">Twitter</a>
           </Social>
         </Hide>
       </div>

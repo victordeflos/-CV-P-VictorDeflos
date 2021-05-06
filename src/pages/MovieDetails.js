@@ -4,7 +4,7 @@ import { MovieState } from '../movieState';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
-
+import ScrollTop from '../components/ScrollTop';
 
 const MovieDetail = () => {
   const history = useHistory();
@@ -27,8 +27,8 @@ const MovieDetail = () => {
           animate="show"
         >
           <HeadLine>
-            <h2>{movie.movie}</h2>
-            <img src={movie.mainImg} alt="main" />
+            <h2>{movie.title}</h2>
+            <img src={movie.mainImg} alt="" />
           </HeadLine>
           <Awards>
             {movie.awards.map((award) => (
@@ -40,7 +40,7 @@ const MovieDetail = () => {
             ))}
           </Awards>
           <ImageDisplay>
-            <img src={movie.secondaryImg} alt="second" />
+            <img src={movie.secondaryImg} alt="" />
           </ImageDisplay>
         </Details>
       )}

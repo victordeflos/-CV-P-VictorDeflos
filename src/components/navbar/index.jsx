@@ -33,7 +33,9 @@ const NavbarContainer = styled.div`
   align-items: center;
   padding:  1rem 10 rem;
   background-color: black;   #00e1ff
-  
+  position: sticky;
+  top: 0;
+  z-index: 10;
 `;
 
 const LeftSection = styled.div`

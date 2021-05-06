@@ -62,9 +62,7 @@ const ServicesSection = () => {
       <img src={home3} alt="" />
           <p>Definition of Research Definition of Project What is Research</p>
         </Image>
-      <Image>
-        <img src={home2} alt="" />
-      </Image>
+     
     </Services>
   );
 };
